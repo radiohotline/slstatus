@@ -66,12 +66,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ keymap,	 "  %s | ",	NULL },
-	{ run_command,	 "%s | ", "/home/troy/scripts/volume.sh" },
-	{ battery_perc,  " %s%% ",	"BAT1" },
-	{ battery_state, "(%s) | ",	"BAT1" },
-	{ run_command,   "󰃝 %s%% | ",   "xbacklight -get" },
-	{ cpu_perc,	 "󰻠 %s%% | ",	NULL },
-	{ ram_perc,	 " %s% | ",	NULL },
+	{ netspeed_rx, " %s | ", "wlan0" },
+	{ run_command,	 "%s | ", "/home/troy/src/slstatus/volume.sh" },
+	{ battery_perc,  " %s%% ",	"BAT0" },
+	{ battery_state, "(%s) | ",	"BAT0" },
+	{ run_command,   "󰃝 %s | ",   "/home/troy/src/slstatus/brightness.sh" },
 	{ datetime, 	 " %s ",	"%b %d (%a) %H:%M" },
 };
